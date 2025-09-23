@@ -1,0 +1,58 @@
+{% extends "my_web/base.html" %}
+{% block title %}Home{% endblock title %}
+{% block content %}
+{% load static %}
+<section class="hero d-flex align-items-center text-center text-white">
+  <div class="container">
+    <h1 class="display-3 fw-bold">Hi, I'm Nirmal Gaur</h1>
+    <p class="lead mb-4">Web Developer | Frontend & Backend Enthusiast</p>
+    <a href="#contact" class="btn btn-outline-light btn-lg">Contact Me</a>
+  </div>
+</section>
+
+<section id="projects" class="projects py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">My Projects</h2>
+    <div class="row g-4">
+
+      <!-- Project 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'my_web/images/khana.png' %}" class="card-img-top" alt="Project 1">
+          <div class="card-body">
+            <h5 class="card-title">Project One</h5>
+            <p class="card-text">This is a short description of my first project.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'my_web/images/qrcode.png' %}" class="card-img-top" alt="Project 2">
+          <div class="card-body">
+            <h5 class="card-title">Project Two</h5>
+            <p class="card-text">This is a short description of my second project.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-sm h-100">
+          <img src="{% static 'my_web/images/khana.png' %}" class="card-img-top" alt="Project 3">
+          <div class="card-body">
+            <h5 class="card-title">Project Three</h5>
+            <p class="card-text">This is a short description of my third project.</p>
+            <a href="#" class="btn btn-primary">View Project</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+{% endblock content %}

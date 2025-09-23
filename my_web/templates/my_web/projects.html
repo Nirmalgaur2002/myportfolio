@@ -1,0 +1,24 @@
+{% extends "my_web/base.html" %}
+{% load static %}
+
+{% block title %}My Projects{% endblock %}
+
+{% block content %}
+<div class="projects-container">
+    <h2>My Projects</h2>
+    
+    <div class="project-card">
+        <img src="{% static 'my_web/images/qrcode.png' %}" alt="QR Code Generator">
+        <h3>QR Code Generator</h3>
+        <p>A web app to generate QR codes quickly for URLs, text, and other data.</p>
+        <a href="https://github.com/yourusername/qrcode-generator" target="_blank">View Project</a>
+    </div>
+
+    <div class="project-card">
+        <img src="{% static 'my_web/images/khana.png' %}" alt="KhanaKhazana Restaurant Website">
+        <h3>KhanaKhazana Restaurant Website</h3>
+        <p>A restaurant website with menu, online order, and responsive design.</p>
+        <a href="https://github.com/yourusername/khanakhazana" target="_blank">View Project</a>
+    </div>
+</div>
+{% endblock %}

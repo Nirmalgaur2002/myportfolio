@@ -12,7 +12,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-hk5n3v83w028)_i@26#4&6lva8^-+g0=u1ujppx3*p0q1l&mui'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = [
     'myportfolio-y7qh.onrender.com',
@@ -111,7 +111,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
-STATICFILES_DIRS = [os.path.join(BASE_DIR, 'my_web', 'static')]
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'my_web', 'static', 'my_web')
+]
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # Default primary key field type
